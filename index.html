@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smart Academic Timetable Management System</title>
+<meta name="description" content="AI-based timetable generator using Constraint Satisfaction (backtracking, forward checking, MRV/Degree/LCV) and a Genetic Algorithm.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%85%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <img src="assets/niet-logo.png" alt="NIET Greater Noida" class="logo">
+    <div>
+      <h1>Smart Academic Timetable Management System</h1>
+      <p>AI (CCSAI0301) &middot; CSP + Genetic Algorithm &middot; SDG 4 Quality Education</p>
+    </div>
+  </div>
+  <nav id="nav" aria-label="Main">
+    <button data-tab="home" class="on">Home</button>
+    <button data-tab="data">1. Data</button>
+    <button data-tab="generate">2. Generate</button>
+    <button data-tab="timetable">3. Timetable</button>
+    <button data-tab="resched">4. Reschedule</button>
+    <button data-tab="bench">Experiments</button>
+    <button data-tab="about">About</button>
+  </nav>
+</header>
+
+<main>
+  <section id="tab-home" class="tab on"></section>
+  <section id="tab-data" class="tab"></section>
+  <section id="tab-generate" class="tab"></section>
+  <section id="tab-timetable" class="tab"></section>
+  <section id="tab-resched" class="tab"></section>
+  <section id="tab-bench" class="tab"></section>
+  <section id="tab-about" class="tab"></section>
+</main>
+
+<dialog id="dlg"><div id="dlgBody"></div><div class="row end"><button class="btn" id="dlgClose">Done</button></div></dialog>
+<div id="toast" role="status"></div>
+<div id="printArea"></div>
+
+<footer class="foot">
+  Team: Akshat Chaurasia, Ananya Singh, Ankit Srivastav, Aarohi Yadav, Abhinesh Yadav &middot; Faculty: Dr. Mohd. Nazim &middot; B.Tech CSE, NIET Greater Noida
+</footer>
+
+<script src="solver.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
